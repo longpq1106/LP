@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+  width: 400px;
+  height: 200px;
+  background-color: rgba(112, 120, 44, 0.458);
+  padding: 0px;
+  margin: 20px;
+}
+form {
+    position:absolute;
+    font-style:inherit;
+    font-family: 'Courier New', Courier, monospace;
+    color:aqua;
+}
+</style>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <div>
+    <h2>ĐĂNG KÝ HỌC VIÊN</h2>  
+    <form action="/action_page.php"; method="get">
+    <label style="margin:5px" for="yourname">Họ và tên</label>
+<input id="yourname"; name="yourname";type="text"><br>
+<label for="dob">Ngày Tháng Năm Sinh</label>
+<input id="dob"; name="dob";type="text"><br>
+<label for="gender">Giới tính</label>
+    <input type="radio"; name="gender"; value="Nam">Nam
+    <input type="radio"; name="gender"; value="Nữ">Nữ
+    <br>
+    <label for="class">Lớp</label>
+    <select> 
+        <option name="class" value="a1">Lớp A1</option>
+        <option name="class" value="a2">Lớp A2</option>
+        <option name="class" value="a3">Lớp A3</option>
+        </select>
+        <br>
+        <label for="Email">Email</label>
+            <input id="Email"; type="text"; name="email"><br>
+            <label for="number">Số Điện Thoại</label>
+<input type="number"; name="phone"><br>
+<input style="margin:5px;" type="submit"; value="Đăng Ký">   
+ <input style="margin:5px;" type="reset"; value="nhập lại">
+</div>
+</form>
+</body>
+</html>
