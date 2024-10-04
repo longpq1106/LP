@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>PO form</title>
+</head>
+<body>
+<p style="font-family:LucidaGrande;font-size:40px">ORDER FORM</p><br>
+<p style="font-family:LucidaGrande;font-size:30px">What Would You Like To Buy</p>
+<br>
+<form action="/action_page.php">
+<select> 
+<option name="drink" value="coffee">A Cup Of Coffee</option>
+<option name="drink" value="softdrink">CocaCola</option>
+<option name="drink" value="milktea">Bubble tea</option>
+</select>
+<br>
+<p style="font-family:sans-serif;font-size:15px">How many would you like to order?</p><br>
+<input type="radio" name="drinks" value="dollars">1 - 10$<br>    
+<input type="radio" name="drinks" value="dollars">2 - 20$<br> 
+<input type="radio" name="drinks" value="dollars">3 - 25$   
+<p<p style="font-family:lucidaGrande;font-size:15px">Name <p style="color: crimson;font-size:30px;float:right">*</p></p><br>
+<input type="text" name="firstname" value="Firstname" required>
+<input type="text" name="lastname" value="Lastname" required>
+<br>
+<p style="font-family:lucidaGrande;font-size:15px">Email</p><br>
+    <input type="text" name="email">
+<br>
+<p style="font-family:lucidaGrande;font-size:15px">Phone Number</p>
+    <input type="tel" name="phonenum">-<input type="tel" name="phonenum">-<input type="tel" name="phonenum">
+<form method="post">
+<input type="submit" Value="Submit">
+</form> 
+</body>
+</html>
