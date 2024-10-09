@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <form>
+        
+    <input type="text" id="numberA">Dien So A</input>
+    
+    <input type="text" id="numberB">Dien So B</input>
+    <button type="button" onclick="calculateFunction()">Click!</button>
+    </form>
+</body>
+<script>
+function calculateFunction() {
+    let a = document.getElementById("numberA").value;
+    let b = document.getElementById("numberB").value;
+    result = (a + b < 4) ? 'Below' : 'Over';
+    console.log(result);
+}
+</script>
+</html>

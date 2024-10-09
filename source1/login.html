@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <form>
+        <p1>Username</p1>
+        <input id="userName" type="text"></input>
+        <p2>Password</p2>
+        <input id="passWord" type="text"></input>
+        <button type="button" onclick="idFunction()">Login</button>
+    </form>
+</body>
+<script>
+    function idFunction() {
+        let user = document.getElementById("userName").value;
+        let pass = document.getElementById("passWord").value;
+if ( user == 'admin') {
+    if ( pass == 'themaster') {
+        alert('welcome');
+    } else if ( pass == null) {
+        alert('canceled');
+    } else {
+        alert('sai pass');
+    }
+} else if (user == null) {
+    alert('canceled');
+} else {
+    alert('sai pass or username');
+}
+   }
+   </script>
+</html>

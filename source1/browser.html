@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <form>
+        <p1>Điền tên browser<p1>
+    <input id="browser" type="text" ></input>
+<button onclick="getBrowser()" type="button">Enter!</button>
+</from>
+</body>
+<script>
+    function getBrowser() {
+        let brws=document.getElementById("browser").value
+        switch (brws) {
+            case 'Edge':
+                alert("Trình duyệt được hỗ trợ");
+                break;
+                case 'Chrome':
+                case 'Firefox':
+                    alert("cần được nâng cấp để hỗ trợ");
+                    break;
+                    case 'Safari': 
+                    case 'Opera': 
+                    alert("Cũng được hỗ trợ");
+                    break;
+                    default:
+                        alert("không được hỗ trợ");
+}
+    }
+</script>
+</html>
