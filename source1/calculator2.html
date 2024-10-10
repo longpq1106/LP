@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<style>
+
+</style>
+<body>
+    </body>
+    <form>
+    <input type="text" id="xem"><br>
+    <button type="button" value="1" onclick="nhapDulieu(this.value)">1</button>
+    <button type="button" value="2" onclick="nhapDulieu(this.value)">2</button>
+    <button type="button" value="3" onclick="nhapDulieu(this.value)">3</button>
+    <button type="button" value="+" onclick="nhapDulieu(this.value)">+</button><br>
+    <button type="button" value="4" onclick="nhapDulieu(this.value)">4</button>
+    <button type="button" value="5" onclick="nhapDulieu(this.value)">5</button>
+    <button type="button" value="6" onclick="nhapDulieu(this.value)">6</button>
+    <button type="button" value="-" onclick="nhapDulieu(this.value)">-</button><br>
+    <button type="button" value="7" onclick="nhapDulieu(this.value)">7</button>
+    <button type="button" value="8" onclick="nhapDulieu(this.value)">8</button>
+    <button type="button" value="9" onclick="nhapDulieu(this.value)">9</button>
+    <button type="button" value="*" onclick="nhapDulieu(this.value)">X</button><br>
+    <button type="button" value="c" onclick="deleTe()">C</button>
+    <button type="button" value="0" onclick="nhapDulieu(this.value)">0</button>
+    <button type="button" id="equa" onclick="resultGet()">=</button>
+    <button type="button" value="/" onclick="nhapDulieu(this.value)">/</button>
+    </form>
+    <script>
+        let view = document.getElementById("xem");
+        function nhapDulieu(value) {
+            view.value += value;
+        }
+        function resultGet() {
+let result = eval(view.value);
+view.value = result;
+        }
+function deleTe () {
+view.value = "";
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="numbera">Dien So A<br>
+        <input type="text" id="numberb">Dien So B
+        <button type="button" id="addtion" onclick="calculateAdd()">Addition(+)</button>
+        <button type="button" id="subtraction" onclick="calculateSub()">Subtraction(-)</button>
+        <button type="button" id="multiply" onclick="calculateMulti()">Multiply(*)</button>
+        <button type="button" id="division" onclick="calculateDiv()">Division(/)</button>
+<p id="demo"></p>
+    </form>
+<script>
+    function calculateAdd() {
+        let a = parseInt(document.getElementById("numbera").value);
+        let b = parseInt(document.getElementById("numberb").value);
+        var sum = a + b;
+        document.getElementById("demo").innerHTML = (sum);
+        }
+        function calculateSub() {
+        let a = document.getElementById("numbera").value;
+        let b = document.getElementById("numberb").value;
+        var x = a - b
+        document.getElementById("demo").innerHTML = x;
+        }
+        function calculateMulti() {
+        let a = document.getElementById("numbera").value;
+        let b = document.getElementById("numberb").value;
+        var x = a * b
+        document.getElementById("demo").innerHTML = x;
+        }
+        function calculateDiv() {
+        let a = document.getElementById("numbera").value;
+        let b = document.getElementById("numberb").value;
+        var x = a / b
+        document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+    </body>
+</html>

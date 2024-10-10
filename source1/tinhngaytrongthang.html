@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <form>
+        <h1>Ứng dụng tính ngày của tháng</h1>
+        <input id="month" type="text">Điền tháng muốn tính</input>
+        <button type="button" onclick="dayCalculate()">Tính số ngày</button>
+</form>
+<script>
+    function dayCalculate () {
+    let h = parseInt(document.getElementById("month").value);
+    switch (h) {
+        case 1: 
+        case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+            alert("Tháng có 31 ngày");
+        break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+        alert("tháng có 30 ngày");
+        break;
+        default:
+            alert("tháng 2 có 28 hoặc 29 ngày");
+    }
+}
+</script>
+</body>
+</html>
